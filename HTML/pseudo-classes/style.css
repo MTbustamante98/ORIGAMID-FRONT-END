@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  display: inline-block;
+  padding: 30px;
+  background-color: #bb0;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.8rem;
+}
+
+a:hover {
+  background-color: #c7c7c7;
+  color: #21c;
+}
+
+a:focus {
+  background-color: red;
+  color: green;
+}
