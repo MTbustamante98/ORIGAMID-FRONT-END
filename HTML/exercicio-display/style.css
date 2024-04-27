@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+  background-color: #111;
+  border-radius: 4px;
+  padding: 30px;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+span {
+  color: #febe01;
+}
+
+h2 {
+  color: #fff;
+}
+
+p {
+  color: #b2b2b2;
+}
+
+a {
+  padding: 10px;
+  background-color: #febe01;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #332200;
+  display: inline-block;
+  cursor: pointer;
+}

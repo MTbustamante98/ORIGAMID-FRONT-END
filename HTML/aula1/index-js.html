@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Sistema de multas</h1>
+  Digite a velocidade do carro: <input type="text" name="txtvel" id="txtvel">
+  <input type="submit" value="Verificar" onclick="tocheck()">
+  <div id="res"></div>
+
+  <script>
+    function tocheck() {
+      var txvel = document.querySelector('input#txtvel')
+      var res = document.querySelector('div#res')
+      var vel = Number(txvel.value)
+      res.innerHTML = `<p> A velocidade atual do carro é de <strong> ${vel} Km/h <strong> </p> `
+    }
+  </script>
+</body>
+</html>
