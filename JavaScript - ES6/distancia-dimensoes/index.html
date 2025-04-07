@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seleção de elementos</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      background-color: grey;
+      padding: 30px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    ul li {
+      font-size: 1.2rem;
+      color: #fb5;
+      font-family: fantasy;
+    }
+
+    .secao1 {
+      background-color: steelblue;
+      height: 300px;
+      width: 100%;
+    }
+
+    .div1 {
+      background-color: yellow;
+      height: 100px;
+      width: 100px;
+      margin-top: 40px;
+    }
+
+    .div2 {
+      background-color: yellow;
+      height: 100px;
+      width: 100px;
+      margin-top: 40px;
+    }
+    
+    .divisao {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 100px;
+    }
+
+    .para1 {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 18px;
+      font-family: 'Courier New', Courier, monospace;
+      color: #fb5;
+      font-weight: 700;
+    }
+
+    .btn {
+      margin: 0 auto;
+      font-size: 19px;
+      font-family: Arial, Helvetica, sans-serif;
+      transform: translate(600px, 50px);
+      cursor: pointer;
+    }
+
+    .faq {
+      max-width: 600px;
+      margin: 0 auto;
+      padding-top: 60px;
+    }
+
+    .faq dt {
+      margin-bottom: 15px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .faq dt::after {
+      content: '👇';
+      margin-left: 5px;
+    }
+
+    .faq dd {
+      margin: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .js-accordion dt.ativo::after {
+      content: '👆';
+      margin-left: 5px;
+    }
+
+    .js-accordion dd {
+      display: none;
+    }
+
+    .js-accordion dd.ativo {
+      display: block;
+      animation: show .4s forwards;
+    }
+
+    @keyframes show {
+      from {
+        opacity: 0;
+        max-height: 0;
+      }
+
+      to {
+        opacity: 1;
+        max-height: 200px;
+      }
+    }
+
+    .secao2 {
+      background-color: red;
+      height: 400px;
+      width: 600px;
+      margin: 0 auto;
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>Fórum</li>
+        <li>Sobre nós</li>
+        <li>Contato</li>
+      </ul>
+    </nav>
+  </header>
+  <section class="secao1">
+    <div class="divisao">
+      <div class="div1"></div>
+      <div class="div2"></div>
+    </div>
+    <p class="para1"></p>
+    <button class="btn">Calcular distância</button>
+  </section>
+  <section class="faq">
+    <dl class="js-accordion">
+        <dt>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sed officia ipsa officiis animi distinctio, rem maxime aliquid quibusdam?</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente dolor, quae cum laboriosam earum a eligendi aspernatur cumque molestiae maiores nemo beatae.</dd>
+        <dt>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sed officia ipsa officiis animi distinctio, rem maxime aliquid quibusdam?</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente dolor, quae cum laboriosam earum a eligendi aspernatur cumque molestiae maiores nemo beatae.</dd>
+        <dt>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sed officia ipsa officiis animi distinctio, rem maxime aliquid quibusdam?</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente dolor, quae cum laboriosam earum a eligendi aspernatur cumque molestiae maiores nemo beatae.</dd>
+        <dt>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sed officia ipsa officiis animi distinctio, rem maxime aliquid quibusdam?</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente dolor, quae cum laboriosam earum a eligendi aspernatur cumque molestiae maiores nemo beatae.</dd>
+        <dt>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sed officia ipsa officiis animi distinctio, rem maxime aliquid quibusdam?</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente dolor, quae cum laboriosam earum a eligendi aspernatur cumque molestiae maiores nemo beatae.</dd>
+    </dl>
+  </section>
+  <section class="secao2"></section>
+  <script src="script.js"></script>
+</body>
+</html>

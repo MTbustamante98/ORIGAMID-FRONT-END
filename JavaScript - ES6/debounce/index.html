@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function debounce(callback, delay) {
+        let timer;
+
+        return (...args) => {
+          if (timer) clearTimeout(timer);
+          timer = setTimeout(() => {
+            callback(...args);
+            timer = null;
+          }, delay);
+        };
+      }
+
+      function onScroll() {
+        console.log("teste");
+      }
+
+      const debouncedScroll = debounce(onScroll, 50)
+
+      window.addEventListener("scroll", debouncedScroll);
+    </script>
+  </body>
+</html>

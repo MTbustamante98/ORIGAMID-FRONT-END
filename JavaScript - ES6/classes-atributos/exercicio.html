@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício atributos/classes</title>
+  <style>
+    .div1 {
+      display: flex;
+      gap: 10px;
+    }
+
+    .div1 button {
+      flex-basis: 150px;
+      font-size: 1rem;
+      font-family: monospace;
+    }
+
+    .ativo {
+      font-size: 18px;
+      background-color: darkred;
+      color: #fff;
+      border: 1px solid yellow;
+    }
+
+    .div2 {
+      margin-top: 48px;
+    }
+
+    .div2 button {
+      display: block;
+      margin-left: 40px;
+      margin-top: 10px;
+      padding: 16px 32px;
+      font-size: 18px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: red;
+      border: 1px solid yellow;
+      background-color: #feb5;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="div1">
+    <button>Clique aqui</button>
+    <p>Ao clicar no botão o parágrafo será modificado!</p>
+  </div>
+
+  <div class="div2">
+    <img src="img/inter.png" alt="Escudo internacional">
+    <button>Clique aqui</button>
+  </div>
+  <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício Constructor function com syntactical sugar</title>
+  <style>
+    #productTable {
+      margin-top: 30px;
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    th {
+      border: 1px solid black;
+    }
+
+    td {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <form id="userForm">
+    <input type="text" name="nome" id="productName" placeholder="Nome do produto" required>
+    <input type="number" name="productPrice" id="productPrice" placeholder="Preço do produto" required>
+    <button type="submit">Adicionar Produto</button>
+  </form>
+  <table id="productTable">
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Preço</th>
+        <th>Ação</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>

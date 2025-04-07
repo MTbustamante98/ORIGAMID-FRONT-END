@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .prioridade-1 {
+        background-color: red;
+      }
+      .prioridade-2 {
+        background-color: yellow;
+      }
+      .prioridade-3 {
+        background-color: green;
+      }
+      .completa {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input
+        type="text"
+        name="text"
+        id="descricao"
+        placeholder="Descrição da tarefa"
+        required
+      />
+      <select name="prioridade" id="prioridade">
+        <option value="1">Alta</option>
+        <option value="2">Média</option>
+        <option value="3">Baixa</option>
+      </select>
+      <button type="button" onclick="adicionarTarefa()">Adicionar Tarefa</button>
+    </form>
+    <div id="listaDeTarefas"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

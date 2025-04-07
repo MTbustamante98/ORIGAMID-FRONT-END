@@ -1,0 +1,147 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+ul li {
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: maroon;
+  padding: 12px;
+}
+
+.logo {
+  width: 80px;
+  height: 70px;
+  background-color: #222;
+}
+
+.header-bg {
+  background-color: grey;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.introducao {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.div1 {
+  max-width: 600px;
+  height: 400px;
+  background-color: lightgray;
+}
+
+.faq-lista {
+  max-width: 700px;
+  padding-bottom: 32px;
+}
+
+.faq-lista dt {
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.titulo-faq {
+  font-size: 3rem;
+}
+
+.faq-lista dd {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.js-accordion dd {
+  display: none;
+}
+
+.js-accordion dt::after {
+  content: '⬎';
+  margin-left: 10px;
+}
+
+.js-accordion dt.ativo::after {
+  content: '⬏';
+  margin-left: 10px;
+}
+
+.js-accordion dd.ativo {
+  display: block;
+  animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  to {
+    opacity: 1;
+    max-height: 200px;
+  }
+}
+
+img {
+  height: 90%;
+  display: block;
+}
+
+.animais {
+  width: min-content;
+  height: 370px;
+  overflow-y: scroll;
+  margin-bottom: 30px;
+  margin-left: 350px;
+}
+
+.animais::-webkit-scrollbar {
+  width: 14px;
+}
+
+.animais::-webkit-scrollbar-thumb {
+  background: #FB5;
+  border-left: 4px solid #faf6ed;
+  border-right: 4px solid #faf6ed;
+  border-radius: 6px;
+}
+
+.logo-2 {
+  background-color: aqua;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.rodape {
+  background-color: #FB5; 
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}

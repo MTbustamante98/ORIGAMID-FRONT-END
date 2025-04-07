@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    label, input {
+      margin-top: 10px;
+    }
+
+    form {
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <button>Change Color</button>
+  <form>
+    <div>
+      <label for="fname">First Name: </label>
+      <input id="fname" type="text">
+      <p></p>
+    </div>
+    <div>
+      <label for="lname">Last Name: </label>
+      <input id="lanme" type="text">
+      <p></p>
+    </div>
+    <div>
+      <input type="submit" value="Enviar">
+    </div>
+  </form>
+
+  <div>
+    <form>
+      <input id="input" type="text" placeholder="Pressione Enter">
+      <p class="mensagem"></p>
+    </form>
+  </div>
+
+  <div>
+    <form>
+      <input id="input2" type="text" placeholder="Digite algo">
+      <p>Caracteres digitados: <span class="Count">0</span></p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

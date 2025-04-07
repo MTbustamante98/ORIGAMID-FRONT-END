@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classes e Atributos</title>
+  <style>
+    .ativar {
+      display: flex;
+      background-color: red;
+      border: 1px solid black;
+      width: 200px;
+      height: 150px;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 18px;
+      color: blueviolet;
+    }
+
+    button {
+      border: 2px dotted red;
+      font-size: 18px;
+      color: blueviolet;
+      margin-left: 120px;
+      flex-shrink: 1;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .div {
+      display: flex;
+      gap: 30px;
+      margin-top: 60px;
+    }
+
+    .div2 {
+      display: flex;
+      gap: 30px;
+      margin-top: 60px;
+    }
+
+    .div3 {
+      display: flex;
+      gap: 30px;
+      margin-top: 60px;
+    }
+
+    .div4 {
+      display: flex;
+      gap: 30px;
+      margin-top: 60px;
+    }
+
+    .cor {
+      background-color: black;
+      color: #fff;
+    }
+
+    .fonte {
+      font-size: 19px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .borda {
+      border: 2px solid yellow;
+    }
+
+    .ativando {
+      color: red;
+    }
+
+    .alternando {
+      background-color: black;
+      color: #fff;
+    }
+
+    .foto {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      width: 200px;
+      gap: 20px;
+    }
+
+    .foto img {
+      cursor: pointer;
+      flex: 1;
+    }
+
+    .foto img:first-child {
+      cursor: initial;
+      min-width: 100%;
+    }
+
+    .foto3 {
+      width: 225px;
+      height: 225px;
+    }
+
+    .foto button {
+      padding: 0 30px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <nav class="menu">
+    <ul class="lista">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <a href="https://www.origamid.com/">Origamid</a>
+    </ul>
+  </nav>
+
+  <div class="foto">
+    <img src="img/inter.png" alt="">
+    <!-- <img src="img/inter2.png" alt="">
+    <img class="foto3" src="img/inter3.jpg" alt=""> -->
+    <button>Click-me</button>
+  </div>
+
+
+  <div class="div">
+    <button>Click-me</button>
+    <p>Ao clicar no botão, uma classe será ativada no parágrafo.</p>
+  </div>
+  <div class="div2">
+    <button>Click-me</button>
+    <p>Ao clicar no botão, uma classe será alternada no parágrafo.</p>
+  </div>
+  <div class="div3">
+    <button>Click-me</button>
+    <p class="ativando">Ao clicar no botão, a classe será removida.</p>
+  </div>
+  <div class="div4">
+    <button>Click-me</button>
+    <p>Ao clicar no botão, o script adicionará diversas classes ao mesmo tempo.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

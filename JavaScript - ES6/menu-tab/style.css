@@ -1,0 +1,396 @@
+img {
+  max-width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  padding: 16px 0px;
+  position: relative;
+}
+
+a::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px;
+  background-color: #222;
+  position: absolute;
+  margin-top: 5px;
+  transition: 0.3s ease-in-out normal;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+.header-bg {
+  background-color: #e51;
+}
+
+.header {
+  padding: 30px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.animais {
+  display: grid;
+  grid-template-columns: 370px 600px;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+hr {
+  margin-top: 60px;
+}
+
+.animais-lista {
+  height: 370px;
+  overflow-y: scroll;
+}
+
+.animais-descricao h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #FF4500;
+}
+
+.animais-descricao h2::before{
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: #FF8C00;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.animais-lista::-webkit-scrollbar {
+  width: 18px;
+}
+
+.animais-lista::-webkit-scrollbar-thumb{
+  background: #FB5;
+  border-left: 4px solid #faf6ed;
+  border-right: 4px solid #faf6ed;
+  border-radius: 10px;
+}
+
+.animais-lista::-webkit-scrollbar-track{
+  background: #faf6ed;
+}
+
+.js-tabcontent section {
+  display: none;
+}
+
+.js-tabcontent section.ativo {
+  display: block;
+  animation: show 1s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* TAB nova */
+
+.times {
+  display: grid;
+  grid-template-columns: 370px 600px;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.times-lista {
+  height: 370px;
+  overflow-y: scroll;
+}
+
+.times-lista img {
+  display: block;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.times-descricao section:first-of-type h2::before{
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: #FF0000;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.times-descricao section:nth-of-type(2) h2::before{
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: #0000FF;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.times-descricao section:nth-of-type(3) h2::before{
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: #00ff00;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.times-descricao section:nth-of-type(4) h2::before{
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: #800000;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.times-lista::-webkit-scrollbar {
+  width: 18px;
+}
+
+.times-lista::-webkit-scrollbar-thumb{
+  background: 	#FFFF00;
+  border-left: 4px solid #faf6ed;
+  border-right: 4px solid #faf6ed;
+  border-radius: 10px;
+}
+
+.times-lista::-webkit-scrollbar-track{
+  background: #faf6ed;
+}
+
+.js-tabContent section {
+  display: none;
+}
+
+.js-tabContent section.ativo {
+  display: block;
+  animation: show2 .6s forwards;
+}
+
+@keyframes show2 {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.biomas {
+  display: grid;
+  grid-template-columns: 370px 600px;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.biomas-lista img {
+  display: block;
+  height: 150px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.biomas-lista {
+  height: 370px;
+  overflow-y: scroll;
+}
+
+.biomas-descricao h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #00d900;
+}
+
+.biomas-descricao h2::before{
+  content: '↪';
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  margin-right: 10px;
+}
+
+.biomas-lista::-webkit-scrollbar {
+  width: 18px;
+}
+
+.biomas-lista::-webkit-scrollbar-thumb{
+  background: #00ff00;
+  border-left: 4px solid #faf6ed;
+  border-right: 4px solid #faf6ed;
+  border-radius: 10px;
+}
+
+.biomas-lista::-webkit-scrollbar-track{
+  background: #faf6ed;
+}
+
+.js-content section {
+  display: none;
+}
+
+.js-content section.ativo {
+  display: block;
+  animation: show3 .8s forwards;
+}
+
+@keyframes show3 {
+  from {
+    opacity: 0;
+    transform: translate3d(60px, 0, 0);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+.faq {
+  margin: 0 auto;
+  max-width: 600px;
+  padding-top: 60px;
+}
+
+.faq dt {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.faq dt::after {
+  content: '⭣';
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.js-accordion dt.ativo::after {
+  content: '⭡';
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.js-accordion dd {
+  display: none;
+}
+
+.js-accordion dd.ativo {
+  display: block;
+  animation: slide .7s forwards;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  to {
+    opacity: 1;
+    max-height: 300px;
+  }
+}
+
+.bichos {
+  display: grid;
+  grid-template-columns: 370px 600px;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.lista-animais {
+  height: 370px;
+  overflow-y: scroll;
+}
+
+.descricao-animais h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #FF4500;
+}
+
+.descricao-animais h2::before{
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: #FF8C00;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.lista-animais::-webkit-scrollbar {
+  width: 18px;
+}
+
+.lista-animais::-webkit-scrollbar-thumb{
+  background: #FB5;
+  border-left: 4px solid #faf6ed;
+  border-right: 4px solid #faf6ed;
+  border-radius: 10px;
+}
+
+.lista-animais::-webkit-scrollbar-track{
+  background: #faf6ed;
+}
+
+.js-sectionContent section {
+  display: none;
+}
+
+.js-sectionContent section.ativo {
+  display: block;
+  animation: slideShow .5s forwards;
+}
+
+@keyframes slideShow {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

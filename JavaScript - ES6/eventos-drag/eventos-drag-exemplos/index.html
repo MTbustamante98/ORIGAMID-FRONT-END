@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos Drag and Drop</title>
+    <style>
+      div {
+        padding: 10px;
+        border: 1px solid #000;
+        height: 100px;
+      }
+
+      article {
+        width: 600px;
+        height: 357px;
+        border: 1px solid black;
+        margin-top: 60px;
+        display: inline-block;
+        transform: translate(50%, 10%);
+      }
+
+      article img {
+        max-width: 100%;
+      }
+
+      ul {
+        margin-top: 80px;
+      }
+
+      section {
+        border: 1px solid black;
+        width: 500px;
+        font-size: 18px;
+        padding: 10px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="dragText">Arraste este texto</div>
+    <div id="dropZone">Solte o texto aqui</div>
+
+    <article id="dragImage" draggable="true">
+      <img src="./img/monalisa.webp" />
+    </article>
+    <article id="dropImage"></article>
+    
+      <ul id="tableList">
+        <li draggable="true" id="item1">Item 1</li>
+        <li draggable="true" id="item2">Item 2</li>
+        <li draggable="true" id="item3">Item 3</li>
+        <li draggable="true" id="item4">Item 4</li>
+      </ul>
+
+      <section id="dragItem" draggable="true">
+        Arraste-me para a lixeira
+      </section>
+
+      <section id="trash" draggable="true">
+        lixeira
+      </section>
+    <script src="script.js"></script>
+  </body>
+</html>

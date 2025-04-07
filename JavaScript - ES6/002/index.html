@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p {
+      font-family: "helvetica neue", helvetica, sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-align: center;
+      border: 2px solid rgba(0, 0, 200, 0.6);
+      background: rgba(0, 0, 200, 0.3);
+      color: rgba(0, 0, 200, 0.6);
+      box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
+      border-radius: 10px;
+      padding: 3px 10px;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    button {
+      width: 60px;
+      padding: 6px 10px;
+    }
+
+    .section1 {
+      width: 470px;
+      height: 200px;
+      background-color: lightgrey;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    .faq-lista h1 {
+      font-size: 2.2rem;
+    }
+
+    .faq-lista {
+      margin: 0 auto;
+      max-width: 800px;
+    }
+
+    .faq-lista dt {
+      margin-bottom: 10px;
+    }
+
+    .js-accordion dd {
+      margin: 15px;
+      display: none;
+    }
+
+    .js-accordion dt::after {
+      content: '⏬';
+      margin-left: 10px;
+    }
+
+    .js-accordion dt.ativo::after {
+      content: '⏫';
+    }
+
+    .js-accordion dd.ativo {
+      display: block;
+      animation: slideDown .5s forwards;
+    }
+
+    @keyframes SlideDown {
+      from {
+        opacity: 0;
+        max-height: 0;
+      }
+
+      to {
+        opacity: 1;
+        max-height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <p>Jogador 1:</p>
+  <button>Click</button>
+
+  <section class="section1">
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quidem pariatur error vitae labore quibusdam dolorem placeat, iusto soluta! Facere nulla assumenda quo cumque voluptate dicta exercitationem deserunt quasi adipisci.
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere pariatur, sed quae blanditiis tempore est nobis consequuntur quibusdam vel placeat expedita provident sit dolorum, debitis unde iure enim soluta sunt?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quod odit nam sapiente ducimus laborum labore mollitia fuga, necessitatibus odio explicabo perspiciatis quisquam eaque nulla officiis rerum consequuntur eligendi aliquid.
+      </div>
+  </section>
+
+  <section class="faq-lista">
+    <h1>FAQ</h1>
+    <dl class="js-accordion">
+      <dt>Lorem ipsum dolor, sit amet consectetur adipisicing elit.?</dt>
+      <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, assumenda nihil unde, cupiditate quidem maiores ad ipsa eligendi, sequi iste provident maxime velit culpa! Saepe fugit dignissimos repellendus dolores inventore</dd>
+
+      <dt>Lorem ipsum dolor, sit amet consectetur adipisicing elit.?</dt>
+      <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, assumenda nihil unde, cupiditate quidem maiores ad ipsa eligendi, sequi iste provident maxime velit culpa! Saepe fugit dignissimos repellendus dolores inventore</dd>
+
+      <dt>Lorem ipsum dolor, sit amet consectetur adipisicing elit.?</dt>
+      <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, assumenda nihil unde, cupiditate quidem maiores ad ipsa eligendi, sequi iste provident maxime velit culpa! Saepe fugit dignissimos repellendus dolores inventore</dd>
+
+      <dt>Lorem ipsum dolor, sit amet consectetur adipisicing elit.?</dt>
+      <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, assumenda nihil unde, cupiditate quidem maiores ad ipsa eligendi, sequi iste provident maxime velit culpa! Saepe fugit dignissimos repellendus dolores inventore</dd>
+    </dl>
+  </section>
+  <script src="script.js" defer></script>
+</body>
+</html>

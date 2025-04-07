@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tooltip - Exercícios</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      padding: .9rem 5rem;
+      border: none;
+      background: #FB5;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border-radius: 4px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .tooltip {
+      position: absolute;
+      z-index: 500;
+      background: rgba(0, 0, 0, 0.1);
+      padding: .3rem 1rem;
+    }
+  </style>
+</head>
+<body>
+  <button data-tooltip aria-label="Tooltip básico">Passe o mouse aqui</button>
+  <script src="script.js"></script>
+</body>
+</html>

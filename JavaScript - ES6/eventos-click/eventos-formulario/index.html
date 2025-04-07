@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .div1 {
+      border: 1px solid black;
+      width: 400px;
+      height: 200px;
+    }
+
+    label, input, button {
+      margin-top: 15px;
+    }
+
+    .divForm1 {
+      margin-top: 32px;
+      border: 1px solid orange;
+      width: 400px;
+    }
+
+    .divForm2 {
+      margin-top: 32px;
+      border: 1px solid yellowgreen;
+      width: 400px;
+    }
+
+    .divForm3 {
+      margin-top: 32px;
+      border: 1px solid blue;
+      width: 400px;
+    }
+
+    .divForm3 .helpText {
+      display: none;
+    }
+
+    #myForm {
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <button class="botao1">Clique duas vezes</button>
+  <p class="paragrafo">Texto</p>
+
+  <div class="div1">
+    <p class="paragrafo2"></p>
+  </div>
+  
+  <form class="formulario1" action="form.php" method="post">
+    <div>
+      <label for="inome">Nome do usuário:</label>
+      <input type="text" name="inome" id="inome" required>
+    </div>
+    <div>
+      <label for="imail">E-mail:</label>
+      <input type="text" name="imail" id="imail" required>
+    </div>
+    <div>
+      <label for="isenha">Senha</label>
+      <input type="password" name="isenha" id="isenha" required>
+    </div>
+    <button id="submit" type="submit">Enviar</button>
+  </form>
+
+  <div class="divForm1">
+    <form class="formulario2">
+      <label for="age">Idade:</label>
+      <input type="number" name="age" id="age">
+      <p class="message"></p>
+    </form>
+  </div>
+
+  <div class="divForm2">
+    <form class="formulario3">
+      <label for="password">Senha:</label>
+      <input type="password" name="password" id="password">
+      <p class="mensagemForte"></p>
+    </form>
+  </div>
+
+  <div class="divForm3">
+    <form id="form">
+      <label for="usuario">Nome do Usuário:</label>
+      <input type="text" name="usuario" id="usuario" placeholder="Digite seu nome de usuário">
+      <p class="helpText"> Dica: Use um nome de usuário exclusivo.</p>
+    </form>
+  </div>
+
+    <form id="myForm">
+      <label for="username">Nome de Usuário:</label>
+      <input type="text" id="username" name="username">
+    
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email">
+    
+      <button type="submit">Enviar</button>
+      <button type="reset">Resetar</button>
+    </form>
+  <script src="script.js"></script>
+</body>
+</html>

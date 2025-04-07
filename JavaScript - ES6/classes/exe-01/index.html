@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício Constructor function com syntactical sugar</title>
+  <style>
+    input {
+      border: 2px solid black;
+      display: block;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      border: none;
+      padding: .6rem 2rem;
+      cursor: pointer;
+      background: springgreen;
+      color: black;
+      font-weight: 900;
+    }
+  </style>
+</head>
+<body>
+  <form id="userForm">
+    <input type="text" name="nome" id="nome" placeholder="Nome" required>
+    <input type="email" name="email" id="email" placeholder="Email" required>
+    <input type="number" name="idade" id="idade" placeholder="Idade" required>
+    <button type="submit">Adicionar Usuário</button>
+  </form>
+  <ul id="userList"></ul>
+  <script src="script.js"></script>
+</body>
+</html>

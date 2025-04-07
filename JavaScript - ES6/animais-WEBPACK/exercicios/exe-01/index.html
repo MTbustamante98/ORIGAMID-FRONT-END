@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios Date Object</title>
+</head>
+<body>
+  <button id="btnDate">Mostrar Data</button>
+  <div id="currentDate"></div>
+
+  <script>
+    const btn = document.getElementById('btnDate');
+    const divDate = document.getElementById('currentDate');
+    const newDate = new Date();
+
+    btn.addEventListener('click', () => {
+      divDate.innerHTML = newDate;
+      divDate.style.marginTop = '10px';
+    })
+  </script>
+</body>
+</html>

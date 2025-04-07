@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios Eventos</title>
+  <style>
+    .div {
+      width: 400px;
+      height: 200px;
+      border: 1px solid black;
+      margin-top: 80px;
+    }
+
+    .divisao {
+      margin-top: 40px;
+    }
+
+    label, input {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+    <p class="para1">Texto original</p>
+    <button class="botao">Clique aqui</button>
+    <div class="div"></div>
+
+    <div class="divisao">
+      <button class="contadorBotao">Clique aqui</button>
+      <p>Contagem: <span class="contador">0</span></p>
+    </div>
+
+    <div class="divisao2">
+      <button class="botao2">Clique aqui</button>
+      <p class="ocultar">Este texto que será mostrado ou ocultado</p>
+    </div>
+
+    <form>
+      <div>
+        <label for="inome">Nome:</label>
+        <input type="text" id="inome">
+      </div>
+      <div>
+        <label for="lnome">SobreNome:</label>
+        <input type="text" id="lnome">
+      </div>
+      <input type="submit" id="submit" value="Enviar">
+    </form>
+    <p class="paragrafo" style="color: red;"></p>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style> 
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .div1 {
+      background: #FB5;
+      width: 300px;
+      text-align: center;
+      padding: 2rem;
+      font: bold 1.2rem 'Arial, Helvetica', sans-serif;
+      cursor: pointer;
+    }
+
+    .tooltip {
+      position: absolute;
+      z-index: 500;
+      padding: .6rem 1rem;
+      border: 1px solid transparent;
+      background: rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+    <div class="div1" data-tooltip aria-label="Endereço próximo ao estacionamento!">Passe o mouse aqui</div>
+    <script src="script.js"></script>
+</body>
+</html>
